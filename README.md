@@ -11,5 +11,8 @@ EcoTrack es un prototipo web interactivo desarrollado mediante la metodología *
 ## 🎯 Reglas de Orquestación (.cursorrules)
 El desarrollo estuvo guiado por el archivo `.cursorrules` priorizando la simplicidad, arquitectura limpia sin dependencias complejas y despliegue rápido.
 
+## Captura de pantalla
+![Evidencia del Entorno y la App](image.png)
+
 ## 👥 Autora
 - **María Paula Rodríguez Muñoz** - *Ingeniera de sistemas en formación*
