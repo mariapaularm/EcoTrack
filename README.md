@@ -3,7 +3,7 @@
 ## Autora
 
 **María Paula Rodríguez Muñoz**  
-Ingeniera de sistemas en formación / Arquitecta de Intenciones
+Ingeniera de sistemas en formación 
 
 ---
 
