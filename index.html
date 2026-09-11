@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>EcoTrack — Calculadora de Huella de Carbono</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="app">
+    <aside class="sidebar">
+      <div class="brand">
+        <span class="brand-mark" aria-hidden="true">🌿</span>
+        <div>
+          <h1>EcoTrack</h1>
+          <p>Huella de carbono personal</p>
+        </div>
+      </div>
+      <nav class="nav">
+        <a class="nav-item is-active" href="#calculadora">Calculadora</a>
+        <a class="nav-item" href="#resultados">Resultados</a>
+        <a class="nav-item" href="#recomendaciones">Consejos</a>
+      </nav>
+      <div class="sidebar-note">
+        <strong>Periodo:</strong> consumo semanal
+      </div>
+    </aside>
+
+    <main class="main">
+      <header class="topbar">
+        <div>
+          <h2>Dashboard ecológico</h2>
+          <p>Estima tu CO<sub>2</sub> semanal a partir de transporte, electricidad y alimentación.</p>
+        </div>
+        <div class="badge">Prototipo local</div>
+      </header>
+
+      <section id="calculadora" class="card form-card">
+        <h3>Consumo semanal</h3>
+        <form id="carbon-form" novalidate>
+          <div class="fields">
+            <label class="field">
+              <span>Transporte (km)</span>
+              <input id="km" name="km" type="number" min="0" step="0.1" placeholder="ej. 80" required>
+              <small>Kilómetros recorridos en la semana</small>
+            </label>
+            <label class="field">
+              <span>Electricidad (kWh)</span>
+              <input id="kwh" name="kwh" type="number" min="0" step="0.1" placeholder="ej. 35" required>
+              <small>Consumo eléctrico semanal del hogar</small>
+            </label>
+            <label class="field">
+              <span>Alimentación (días con carne)</span>
+              <input id="meat-days" name="meatDays" type="number" min="0" max="7" step="1" placeholder="ej. 4" required>
+              <small>Días de la semana con consumo de carne (0–7)</small>
+            </label>
+          </div>
+          <button type="submit" class="btn">Calcular Huella</button>
+        </form>
+      </section>
+
+      <section id="resultados" class="results" hidden>
+        <div class="summary-grid">
+          <article class="card highlight">
+            <p class="label">Total estimado</p>
+            <p class="total"><span id="total-co2">0</span> <small>kg CO<sub>2</sub></small></p>
+            <p class="level" id="impact-level">—</p>
+          </article>
+          <article class="card">
+            <p class="label">Transporte</p>
+            <p class="metric" id="transport-co2">0 kg</p>
+            <div class="bar"><span id="bar-transport"></span></div>
+          </article>
+          <article class="card">
+            <p class="label">Electricidad</p>
+            <p class="metric" id="electric-co2">0 kg</p>
+            <div class="bar"><span id="bar-electric"></span></div>
+          </article>
+          <article class="card">
+            <p class="label">Alimentación</p>
+            <p class="metric" id="food-co2">0 kg</p>
+            <div class="bar"><span id="bar-food"></span></div>
+          </article>
+        </div>
+
+        <article class="card progress-card">
+          <div class="progress-head">
+            <h3>Progreso vs. meta semanal</h3>
+            <span id="progress-caption">0 / 50 kg</span>
+          </div>
+          <div class="progress" role="progressbar" aria-valuemin="0" aria-valuemax="50" aria-valuenow="0" id="progress-bar">
+            <span id="progress-fill"></span>
+          </div>
+          <p class="hint">Meta de referencia: 50 kg CO<sub>2</sub> por semana.</p>
+        </article>
+      </section>
+
+      <section id="recomendaciones" class="card tips-card" hidden>
+        <h3>Recomendaciones personalizadas</h3>
+        <ul id="tips-list"></ul>
+      </section>
+    </main>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
