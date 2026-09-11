@@ -1,6 +1,8 @@
 # ==========================================
 # REGLAS DE ORQUESTACIÓN: PROYECTO ECOTRACK
 # ==========================================
+# Copia explícita y visible de .cursorrules
+# (el archivo punteado a veces no se muestra en exploradores o GitHub).
 
 project_type: static_web_application
 stack:
