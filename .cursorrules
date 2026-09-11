@@ -1,0 +1,16 @@
+# ==========================================
+# REGLAS DE ORQUESTACIÓN: PROYECTO ECOTRACK
+# ==========================================
+
+project_type: static_web_application
+stack:
+  - html5
+  - css3
+  - javascript_es6
+
+rules:
+  - Keep_it_simple: Mantener una arquitectura ligera en archivos independientes (index.html, style.css, script.js).
+  - No_complex_frameworks: Evitar configuraciones de Node.js, Webpack o Vite para garantizar ejecución estática inmediata y sin errores de puerto.
+  - UI_Vibe: Implementar una interfaz moderna y responsive basada en un tema de diseño sostenible (variables CSS con paleta esmeralda, verde boscoso y sombras suaves).
+  - Clean_JS_Logic: Lógica pura en JavaScript para cálculo de emisiones (factores de conversión) y manipulación ágil del DOM sin dependencias externas.
+  - Self_contained: Asegurar que el proyecto se ejecute de forma autónoma al abrir el index.html en cualquier navegador o servidor estático.

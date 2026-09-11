@@ -7,30 +7,10 @@
 
 ---
 
-## 1. Intención y Visión de Alto Nivel
-El objetivo fundamental con **EcoTrack** fue liderar el desarrollo desde el rol de *Orquestadora de IA*, priorizando la arquitectura y el diseño funcional por encima del tipeo manual de sintaxis. La meta fue construir una calculadora interactiva de huella de carbono semanal que fuera rápida, visualmente atractiva y 100% responsiva.
+El desarrollo del proyecto EcoTrack (calculadora de huella de carbono personal) representó una experiencia completa de Vibe Coding, donde asumí el rol de Orquestadora de IA liderando las decisiones de diseño, arquitectura y resolución de problemas, delegando la construcción sintáctica del código a la Inteligencia Artificial.
 
----
+Desde el inicio, configuré un archivo .cursorrules para delimitar las restricciones del sistema. La instrucción clave fue priorizar una arquitectura ligera (HTML5, CSS3 y JavaScript ES6 puro) evitando marcos de trabajo o compiladores pesados. Esto permitió que la IA generara componentes modulares de fácil lectura y mantenimiento, manteniendo una estética visual moderna basada en una paleta ecológica (tonos verdes esmeralda, tipografía sans-serif y tarjetas responsivas).
 
-## 2. Configuración del Ecosistema (`.cursorrules`)
-Para alinear las respuestas de la IA con la arquitectura ideal del proyecto, se configuró un archivo `.cursorrules` estricto. Este archivo actuó como la "personalidad" técnica del agente, imponiendo reglas claras:
+El mayor desafío técnico surgió durante la integración con el ecosistema de despliegue en Replit y Cursor, debido al agotamiento prematuro de las cuotas gratuitas de los agentes automáticos y restricciones en modelos premium. En lugar de detener el proceso o rehacer el código manualmente, apliqué la mentalidad de Vibe Coding: pivoté estratégicamente hacia la selección de modelos alternativos de IA (como Grok) y migré el proyecto hacia una arquitectura estática pura. Esta decisión eliminó dependencias de servidor, resolvió cuellos de botella en la compilación y garantizó la portabilidad del código hacia GitHub.
 
-* **Arquitectura Ligera:** Restricción explícita de marcos complejos (Node/Webpack/Vite) para evitar cuellos de botella en la compilación y permitir ejecución estática inmediata.
-* **Modularidad Estricta:** Separación limpia del código en `index.html`, `style.css` y `script.js`.
-* **Coherencia Estética:** Aplicación de una paleta ecológica (tonos esmeralda, verdes y grises oscuros) mediante variables CSS.
-
----
-
-## 3. Orquestación y Resolución de Problemas Técnicos
-Durante la integración entre Cursor y Replit, nos enfrentamos a restricciones severas de entorno: el agotamiento de cuotas del agente de Replit y el bloqueo de modelos premium en Cursor por consumo de tokens. Como Orquestadora, en lugar de reiniciar el trabajo, tomé decisiones estratégicas de pivotaje:
-
-> **Estrategia de Resiliencia:** Se transicionó de un entorno dinámico con dependencias pesadas a una arquitectura web estática pura en HTML/CSS/JS. Se migró la orquestación a modelos alternativos (Grok) sin perder coherencia técnica, garantizando un despliegue impecable y un código limpio respaldado en GitHub.
-
----
-
-## 4. Reflexión sobre la Mentalidad de Vibe Coding
-Este proyecto demostró que la verdadera habilidad del desarrollo moderno reside en saber pedir, dirigir y solucionar problemas de entorno. 
-
-La IA asumió la carga sintáctica mientras yo mantuve el control absoluto del producto, las directrices de diseño y el control de calidad. 
-
-**EcoTrack** es el resultado directo de una orquestación ágil, resiliente y enfocada en entregar valor funcional.
+La orquestación entre Cursor (como entorno de desarrollo asistido) y Replit/GitHub (como infraestructura de código) demostró cómo la claridad en la intención del usuario y la definición estricta de reglas iniciales permiten superar limitaciones técnicas en tiempo récord. EcoTrack no es solo una herramienta funcional para el cálculo de emisiones de CO2; es la evidencia de un flujo de trabajo optimizado donde la dirección de alto nivel prevalece sobre la codificación manual.
